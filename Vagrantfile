@@ -69,4 +69,6 @@ Vagrant.configure(2) do |config|
   # SHELL
 
   config.vm.provision :shell, path: "bootstrap.sh"
+  config.vm.provision :shell, path: "install_naoqi.sh"
+  config.vm.provision :shell, path: "install_nao_packages.sh"
 end
