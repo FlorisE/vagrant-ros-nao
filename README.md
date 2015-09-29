@@ -1,7 +1,7 @@
 # vagrant-ros-nao
 Vagrant initialization for a Ubuntu Virtual Machine with the packages for ROS and Nao preinstalled
 
-## Usage:
+## Usage
 
 Requirements: Vagrant, VirtualBox, naoqi SDK's for C++ and Python, version 2.1.3.3 
 
