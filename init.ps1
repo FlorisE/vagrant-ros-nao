@@ -1,5 +1,5 @@
-choco install vagrant
-choco install VirtualBox
+# install vagrant and virtualbox without prompting for confirmation
+choco install vagrant VirtualBox -y
 
 $NaoqiSDKCppExists    = Test-Path pynaoqi-python2.7-2.1.3.3-linux64.tar.gz
 $NaoqiSDKPythonExists = Test-Path naoqi-sdk-2.1.3.3-linux64.tar.gz
