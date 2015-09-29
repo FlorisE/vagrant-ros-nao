@@ -20,8 +20,8 @@ sudo rosdep init
 rosdep update
 
 # Environment setup
-echo "source /opt/ros/jade/setup.bash" >> ~/.bashrc
-echo "source /opt/ros/jade/setup.bash" >> ~/.bash_login
+echo "source /opt/ros/jade/setup.bash" >> /home/vagrant/.bashrc
+echo "source /opt/ros/jade/setup.bash" >> /home/vagrant/.bash_login
 source ~/.bashrc
 
 # Get rosinstall

@@ -45,7 +45,7 @@ Vagrant.configure(2) do |config|
   #
   config.vm.provider "virtualbox" do |vb|
     # Display the VirtualBox GUI when booting the machine
-    vb.gui = true
+    vb.gui = false
     # Customize the amount of memory on the VM:
     vb.memory = "1024"
   end
@@ -68,7 +68,7 @@ Vagrant.configure(2) do |config|
   #   sudo apt-get install -y apache2
   # SHELL
 
-  config.vm.provision :shell, path: "bootstrap.sh"
-  config.vm.provision :shell, path: "install_naoqi.sh"
-  config.vm.provision :shell, path: "install_nao_packages.sh"
+  config.vm.provision :shell, path: "bootstrap.sh", privileged: false
+  config.vm.provision :shell, path: "install_naoqi.sh", privileged: false
+  config.vm.provision :shell, path: "install_nao_packages.sh", privileged: false
 end
